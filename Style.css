@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    cursor: url(/assests/imgphoto/buttonimg/sword.png) 16 16, auto;
+    cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
 }
 
 html {
@@ -500,7 +500,7 @@ footer {
         margin-left: 20px;
     }
     .img1{
-        width: 85vw;
+        width: 90vw;
     }
     .aimg{
         width: 85vw; 

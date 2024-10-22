@@ -16,6 +16,9 @@ html,body {
     padding: 0;
     overflow-x: hidden;
 }
+button{
+    cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
+}
 :root {
     /* background color for nav , header and many more */
     --bncolor: blueviolet;

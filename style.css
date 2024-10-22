@@ -53,6 +53,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
     box-sizing: inherit;
 }
 
@@ -256,7 +257,7 @@ nav>.n1:hover {
 table {
     border-collapse: collapse;
     text-align: center;
-    width: 80vw;
+    width: 75vw;
 }
 
 tr,

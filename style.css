@@ -1,228 +1,235 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
+  margin: 0;
+  padding: 0;
+  cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
 }
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-button{
-    cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
-}
-:root {
-    /* background color for nav , header and many more */
-    --bncolor: blueviolet;
-    --tcolor: white;
-    --bccolor: #1f1f1f;
-    --cbbcolor: black;
-    --cbcolor: rgb(42, 42, 42);
-    --ibcolor: white;
-    --shtcolor: white;
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+button {
+  cursor: url(./assests/imgphoto/buttonimg/sword.png) 16 16, auto;
+}
+
+:root {
+  /* background color for nav , header and many more */
+  --bncolor: blueviolet;
+  --tcolor: white;
+  --bccolor: #1f1f1f;
+  --cbbcolor: black;
+  --cbcolor: rgb(42, 42, 42);
+  --ibcolor: white;
+  --shtcolor: white;
 }
 
 /* darkmode and light mode */
 .darkmode {
-    --bncolor: blueviolet;
-    --tcolor: white;
-    --bccolor: #1f1f1f;
-    --tbccolor: white;
-    --cbbcolor: black;
-    --cbcolor: rgb(42, 42, 42);
-    --ibcolor: white;
-    --cardsc: rgb(10, 10, 10);
+  --bncolor: blueviolet;
+  --tcolor: white;
+  --bccolor: #1f1f1f;
+  --tbccolor: white;
+  --cbbcolor: black;
+  --cbcolor: rgb(42, 42, 42);
+  --ibcolor: white;
+  --cardsc: rgb(10, 10, 10);
 }
 
 .lightmode {
-    --bncolor: blueviolet;
-    --tcolor: #1f1f1f;
-    --bccolor: white;
-    --tbccolor: #1f1f1f;
-    --cbbcolor: rgb(255, 255, 255);
-    --cbcolor: rgba(212, 212, 212, 0.612);
-    --ibcolor: #1f1f1f47;
-    --cardsc: rgb(114, 114, 114);
+  --bncolor: blueviolet;
+  --tcolor: #1f1f1f;
+  --bccolor: white;
+  --tbccolor: #1f1f1f;
+  --cbbcolor: rgb(255, 255, 255);
+  --cbcolor: rgba(212, 212, 212, 0.612);
+  --ibcolor: #1f1f1f47;
+  --cardsc: rgb(114, 114, 114);
 }
 
 body {
-    background-color: var(--bccolor);
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    color: var(--tcolor);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: inherit;
+  background-color: var(--bccolor);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: var(--tcolor);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  box-sizing: inherit;
 }
 
 header {
-    background-color: var(--bncolor);
-    position: relative;
-    font-size: 20px;
-    text-align: center;
-    top: 0;
-    color: var(--shtcolor);
-    margin: 0;
-
+  background-color: var(--bncolor);
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  top: 0;
+  color: var(--shtcolor);
+  margin: 0;
 }
 
 /* theme button (darkmode) */
 #theme {
-    height: 35px;
-    width: 35px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    top: 30px;
-    right: 20px;
-    position: absolute;
-    transition: transform 0.2s,rotate 0.3s,box-shadow 0.2s ease-in-out ; 
-    animation: rotate 0.5s ease-in-out;
-
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  top: 30px;
+  right: 20px;
+  position: absolute;
+  transition: transform 0.2s, rotate 0.3s, box-shadow 0.2s ease-in-out;
+  animation: rotate 0.5s ease-in-out;
 }
 
 #theme:hover {
-    transform: scale(1.05);
-    rotate: 360deg;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  rotate: 360deg;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes rotate {
-    from{rotate: 0deg;}
-    to{rotate: 360deg;}
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
 }
 
 #theme svg:last-child {
-    display: none;
+  display: none;
 }
 
 .lightmode #theme svg:first-child {
-    display: none;
+  display: none;
 }
 
 .lightmode #theme svg:last-child {
-    display: block;
+  display: block;
 }
+
 /* to seperate the section from the header  */
 section {
-    margin: 20px;
+  margin: 20px;
 }
 
 /* For Heading in the nav bar */
 .htop {
-    padding-top: 16px;
+  padding-top: 16px;
 }
 
 /* for every single heading */
 .head1 {
-    display: inline-block;
-    background-color: var(--bncolor);
-    color: var(--shtcolor);
-    padding: 5px;
-    border-radius: 6px;
-    margin: 5px 3px;
-    font-family: "Poppins", sans-serif;
+  display: inline-block;
+  background-color: var(--bncolor);
+  color: var(--shtcolor);
+  padding: 5px;
+  border-radius: 6px;
+  margin: 5px 3px;
+  font-family: "Poppins", sans-serif;
 }
 
 .shead {
-    margin-left: -17px;
+  margin-left: -17px;
 }
 
 .li {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* for nav bar as I use ancher tag instant of list */
 .n1 {
-    display: inline-block;
-    text-decoration: none;
-    color: var(--shtcolor);
-    padding: 10px 20px;
-    transition: 0.5s;
-    font-weight: bold;
-    transition: all 0.5s ease;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--shtcolor);
+  padding: 10px 20px;
+  transition: 0.5s;
+  font-weight: bold;
+  transition: all 0.5s ease;
 }
 
 p {
-    padding: 10px;
+  padding: 10px;
 }
 
-.spad{
-    padding-left:0 ;
-    
+.spad {
+  padding-left: 0;
 }
+
 /* for nav hover effect */
-nav>.n1:hover {
-    background-color: rgb(107, 29, 180);
-    font-size: 1.2em;
-    /* might add in future remove line created on active page */
-    /* padding-bottom: 5px; */
+nav > .n1:hover {
+  background-color: rgb(107, 29, 180);
+  font-size: 1.2em;
+  /* might add in future remove line created on active page */
+  /* padding-bottom: 5px; */
 }
 
 /* for glow effect at the end of the new page */
 #cb {
-    color: var(--bncolor);
-    
-    font-weight: bold;
-    
+  color: var(--bncolor);
+
+  font-weight: bold;
 }
 
 #cb:hover {
-    text-shadow: 1px 1px 20px var(--tcolor);
-    
+  text-shadow: 1px 1px 20px var(--tcolor);
+}
 
+#cbl {
+  text-decoration: none;
 }
-#cbl{
-    text-decoration: none;
-}
+
 /* news page ep realse */
-.epre{
-    padding: 10px 20px;
+.epre {
+  padding: 10px 20px;
 }
+
 /* for the image use at the home page */
 .img1 {
-    margin-top: 20px;
-    float: right;
-    width: 37vw;
-    height: auto;
-    max-width: max-content;
-    border: 5px solid var(--bncolor);
-    border-radius: 15px;
+  margin-top: 20px;
+  float: right;
+  width: 37vw;
+  height: auto;
+  max-width: max-content;
+  border: 5px solid var(--bncolor);
+  border-radius: 15px;
 }
 
 /* img of author */
 .aimg {
-    max-width: max-content;
-    border: 5px solid var(--bncolor);
-    border-radius: 15px;
+  max-width: max-content;
+  border: 5px solid var(--bncolor);
+  border-radius: 15px;
 }
 
 .img2 {
-    height: 250px;
-    margin-top: 20px;
-    width: 70vw;
+  height: 250px;
+  margin-top: 20px;
+  width: 70vw;
 }
 
 /* for every single video on charater page and a one on news page*/
 .v1 {
-    border: 4px solid var(--bncolor);
-    border-radius: 15px;
-    width: 50vw;
-    box-sizing: border-box;
-    margin: 10px;
-    margin-left: 5px;
+  border: 4px solid var(--bncolor);
+  border-radius: 15px;
+  width: 50vw;
+  box-sizing: border-box;
+  margin: 10px;
+  margin-left: 5px;
 }
 
 /* every single audio */
@@ -234,289 +241,306 @@ nav>.n1:hover {
 
 /* create to move thanks to right */
 .thead {
-    margin-left: 94px;
+  margin-left: 94px;
 }
 
 /* use in about page for comment */
 .pm {
-    margin-left: 334px;
-    margin-right: 15px;
-    border: 5px solid var(--bncolor);
-    padding: 3px 5px;
-    border-radius: 15px;
-    font-size: large;
-
+  margin-left: 334px;
+  margin-right: 15px;
+  border: 5px solid var(--bncolor);
+  padding: 3px 5px;
+  border-radius: 15px;
+  font-size: large;
 }
 
 /* for the table */
 /* for canon ep */
 .gcolor {
-    background-color: #0f662f;
-    color: var(--shtcolor);
+  background-color: #0f662f;
+  color: var(--shtcolor);
 }
 
 /* for filler ep */
 .rcolor {
-    background-color: rgba(161, 51, 51, 0.637);
-    color: var(--shtcolor);
+  background-color: rgba(161, 51, 51, 0.637);
+  color: var(--shtcolor);
 }
 
 /* for table border */
 table {
-    border-collapse: collapse;
-    text-align: center;
-    width: 75vw;
+  border-collapse: collapse;
+  text-align: center;
+  width: 75vw;
 }
 
 tr,
 th,
 td {
-    border: 3px solid var(--tbccolor);
-    padding: 3px;
+  border: 3px solid var(--tbccolor);
+  padding: 3px;
 }
 
 th {
-    background-color: rgba(137, 43, 226, 0.649);
+  background-color: rgba(137, 43, 226, 0.649);
 }
 
 .tablecon {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .tahead {
-    color: var(--shtcolor);
+  color: var(--shtcolor);
 }
 
 /* for the suggestion cards in the about page from  this to  -*/
 .main_c {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 20px;
 }
 
 /* This is card box  */
 .box {
-    position: relative;
-    width: 230px;
-    height: 295px;
-    padding-bottom: 30px;
+  position: relative;
+  width: 230px;
+  height: 295px;
+  padding-bottom: 30px;
 }
 
 /* this is the card */
 .container {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    transition: all 1s ease-in-out;
-
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: all 1s ease-in-out;
 }
 
 /* card front and back */
 .card_front,
 .card_back {
-    height: 100%;
-    width: 100%;
-    /* max-height: 295px; */
-    position: absolute;
-    backface-visibility: hidden;
-    background-color: var(--cbbcolor);
-    border: 4px solid var(--cbcolor);
-    border-radius: 20px;
-    box-shadow: 0px 2px 20px var(--cardsc);
+  height: 100%;
+  width: 100%;
+  /* max-height: 295px; */
+  position: absolute;
+  backface-visibility: hidden;
+  background-color: var(--cbbcolor);
+  border: 4px solid var(--cbcolor);
+  border-radius: 20px;
+  box-shadow: 0px 2px 20px var(--cardsc);
 }
 
 /* card back */
 .card_back {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 /* card hover function to flip the card */
 .container:hover {
-    transform: rotateY(180deg);
-
+  transform: rotateY(180deg);
 }
 
 /* this is for the image in the card */
 .i0 {
-    width: 220px;
-    height: 150px;
-    padding: 5px;
-    border-radius: 20px;
-    margin-bottom: 0;
-    padding-bottom: 0;
+  width: 220px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 /* card cat gap and shape */
 .s1 {
-    color: var(--bncolor);
-    background-color: rgba(137, 43, 226, 0.207);
-    border-radius: 25px;
-    padding: 1px 6px;
-    font-size: 9px;
-    margin-top: 1px;
-    text-align: center;
-    /* border: 1px solid rgba(137, 43, 226, 0.527); */
+  color: var(--bncolor);
+  background-color: rgba(137, 43, 226, 0.207);
+  border-radius: 25px;
+  padding: 1px 6px;
+  font-size: 9px;
+  margin-top: 1px;
+  text-align: center;
+  /* border: 1px solid rgba(137, 43, 226, 0.527); */
 }
 
 /* to give extra margin in the lft of the first cat */
 .s2 {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 
 /* for name of the anime */
 .t1 {
-    margin-left: 11px;
-    margin-top: 6px;
-    margin-bottom: 0;
+  margin-left: 11px;
+  margin-top: 6px;
+  margin-bottom: 0;
 }
 
 /* for the para about the anime in cards */
 .p1 {
-    margin: 5px;
-    font-size: 11px;
-    color: rgb(151, 146, 146);
-    text-align: center;
-    padding: 0 5px;
+  margin: 5px;
+  font-size: 11px;
+  color: rgb(151, 146, 146);
+  text-align: center;
+  padding: 0 5px;
 }
 
 /* for more info about anime in the back of the card */
 .card_back .p2 {
-    margin: 15px 15px 15px;
-    text-align: justify;
-    font-size: 11px;
+  margin: 15px 15px 15px;
+  text-align: justify;
+  font-size: 11px;
 }
 
 /* -this */
 
 /* container for both the blob and social bar */
 .imso {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* image inside of the blob */
 .simg {
-    border: 2px solid rgb(101, 55, 145);
-    /* border-radius: 0% 46% 30% 44% / 39% 40% 0% 42%; */
-    margin: 10px 0;
-    box-shadow: 0 5px 5px 5px rgba(76, 25, 123, 0.425);
-    background-color: rgba(137, 43, 226, 0.207);
-    animation: blob 5s infinite ease-in-out;
-    margin-right: auto;
-
+  border: 2px solid rgb(101, 55, 145);
+  /* border-radius: 0% 46% 30% 44% / 39% 40% 0% 42%; */
+  margin: 10px 0;
+  box-shadow: 0 5px 5px 5px rgba(76, 25, 123, 0.425);
+  background-color: rgba(137, 43, 226, 0.207);
+  animation: blob 5s infinite ease-in-out;
+  margin-right: auto;
 }
 
 /* bolb animation */
 @keyframes blob {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
 
-    0%,
-    100% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    }
-
-    50% {
-        border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-    }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
 }
 
 /* this is social icon conatiner */
 .solist {
-    display: grid;
-    margin-right: 150px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 93%;
-    align-items: center;
-    justify-items: center;
-    gap: 30px;
-    list-style: none;
-    align-content: end;
-    margin-bottom: 20px;
+  display: grid;
+  margin-right: 150px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  height: 93%;
+  align-items: center;
+  justify-items: center;
+  gap: 30px;
+  list-style: none;
+  align-content: end;
+  margin-bottom: 20px;
 }
 
 /* icons it self  */
 .fa-brands {
-    border: 2px solid blueviolet;
-    font-size: 32px;
-    height: 60px;
-    width: 60px;
-    text-align: center;
-    box-sizing: border-box;
-    color: rgb(117, 23, 205);
-    text-decoration: none;
-    text-align: center;
-    border-radius: 47%;
-    /* background-color: rgba(138, 27, 243, 0.303); */
-    color: rgb(139, 27, 243);
-    position: relative;
-    z-index: 0;
-    overflow: hidden;
-
+  border: 2px solid blueviolet;
+  font-size: 32px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  box-sizing: border-box;
+  color: rgb(117, 23, 205);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 47%;
+  /* background-color: rgba(138, 27, 243, 0.303); */
+  color: rgb(139, 27, 243);
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
 }
 
 /* icon background loading */
 .fa-brands::after {
-    content: '';
-    background-color: var(--ibcolor);
-    height: 0;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    z-index: -1;
-    transition: all 250ms ease;
+  content: "";
+  background-color: var(--ibcolor);
+  height: 0;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: all 250ms ease;
 }
 
 /* icon hover effect */
 .fa-brands:hover::after {
-    height: 100%;
+  height: 100%;
 }
 
 /* to center icon horizentally */
 .solist i {
-    line-height: 56px;
+  line-height: 56px;
 }
 
 /* for the footer */
 footer {
-    bottom: 0;
-    margin-top: auto;
-    font-weight: bold;
-    text-align: center;
-    background-color: var(--bncolor);
-    color: var(--shtcolor);
-    padding: 5px;
-    /* border-radius: 15px; */
+  bottom: 0;
+  margin-top: auto;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--bncolor);
+  color: var(--shtcolor);
+  padding: 5px;
+  /* border-radius: 15px; */
 }
-/* responsive */
-@media only screen and (max-width:460px) {
-    .v1 {
-        width: 80vw;
-    }
 
-    .audio {
-        width: 80vw;
-    }
-    .n1{
-        padding: 10px 6px;
-    }
-    .pm{
-        margin-left: 20px;
-    }
-    .img1{
-        width: 90vw;
-    }
-    .aimg{
-        width: 85vw; 
-    }
-    #theme{
-        right:8px;
-        height: 32px;
-        width: 32px;
-    }
+/* responsive */
+@media only screen and (max-width: 460px) {
+  .v1 {
+    width: 80vw;
+  }
+
+  .audio {
+    width: 80vw;
+  }
+
+  .n1 {
+    padding: 10px 6px;
+  }
+
+  .pm {
+    margin-left: 20px;
+  }
+
+  .img1 {
+    width: 90vw;
+  }
+
+  .aimg {
+    width: 85vw;
+  }
+
+  #theme {
+    right: 8px;
+    height: 32px;
+    width: 32px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(49, 49, 50);
+  border-radius: 5px;
+  min-height: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #403f41f1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #3a3a3a25;
 }

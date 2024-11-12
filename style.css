@@ -527,7 +527,7 @@ footer {
     width: 32px;
   }
 }
-
+/* scroll bar */
 ::-webkit-scrollbar {
   width: 12px;
 }

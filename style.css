@@ -171,7 +171,7 @@ p {
 }
 
 /* for nav hover effect */
-nav > .n1:hover {
+nav>.n1:hover {
   background-color: rgb(107, 29, 180);
   font-size: 1.2em;
   /* might add in future remove line created on active page */
@@ -271,7 +271,7 @@ nav > .n1:hover {
 table {
   border-collapse: collapse;
   text-align: center;
-  width: 75vw;
+  /* width: 75vw; */
 }
 
 tr,
@@ -417,6 +417,7 @@ th {
 
 /* bolb animation */
 @keyframes blob {
+
   0%,
   100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -483,6 +484,24 @@ th {
   line-height: 56px;
 }
 
+/* auto type */
+.teffect {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  margin-right: 100px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.autotext {
+  color: blueviolet;
+}
+
+.autoh1 {
+  width: 450px;
+}
+
 /* for the footer */
 footer {
   bottom: 0;
@@ -521,12 +540,19 @@ footer {
     width: 85vw;
   }
 
+  .teffect {
+    margin-right: 0;
+    text-align: center;
+    width: 355px;
+  }
+
   #theme {
     right: 8px;
     height: 32px;
     width: 32px;
   }
 }
+
 /* scroll bar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -537,8 +563,9 @@ footer {
   border-radius: 5px;
   min-height: 100px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #403f41f1;
+  background-color: #403f41f1;
 }
 
 ::-webkit-scrollbar-track {

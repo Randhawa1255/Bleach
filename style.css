@@ -271,7 +271,7 @@ nav>.n1:hover {
 table {
   border-collapse: collapse;
   text-align: center;
-  /* width: 75vw; */
+  width: 75vw;
 }
 
 tr,
